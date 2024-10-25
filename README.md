@@ -1,5 +1,18 @@
 # CInsurance-
-
+Insurance DApp (Weather Surety Solutions)
+This project provides a decentralized application (DApp) built on Ethereum for handling weather-based insurance contracts and claims. The user interacts with the DApp through MetaMask, where they can initiate insurance policies and submit claims based on weather conditions, using smart contracts deployed on the blockchain.
+File Structure
+PIS/: Main frontend of the DApp.
+src/: Contains the ReactJS frontend code, including the main application logic in App.js.
+package.json: Lists dependencies required to run the frontend.
+weather-surety-solutions-main/: Contains smart contracts and migration scripts.
+contracts/: Solidity smart contracts that handle the business logic.
+migrations/: Scripts used by Truffle to deploy the contracts.
+test/: Contains test scripts to ensure the contracts work as expected.
+JsonJqVerifierServer-main/: Backend verifier server, possibly used to verify external data (e.g., weather conditions) via APIs.
+contracts/: Another folder for Solidity contracts that may be used by both the DApp and the backend verifier.
+scripts/: Contains deployment scripts for automating contract deployment and interaction.
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 How the Application Works
 The application is designed to provide weather-based insurance using Ethereum smart contracts. Here's how each part of the system works:
@@ -21,8 +34,7 @@ The backend verifier server could be used to handle external data verification, 
 MetaMask is used to connect the user’s wallet to the Ethereum blockchain.
 It allows the user to approve transactions such as paying insurance premiums and submitting claims.
 The smart contracts require interaction with the user’s wallet to ensure that they are authorized to perform actions like creating contracts or receiving payouts.
-
-
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
 Prerequisites
 Ensure you have the following installed:
 Node.js: Required for running the frontend and backend servers.
@@ -30,7 +42,7 @@ Truffle: Required for compiling, testing, and deploying smart contracts.
 Ganache: Local Ethereum blockchain for development.
 MetaMask: Browser extension for interacting with the Ethereum blockchain.
 Solidity: For compiling smart contracts.
-
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
 Step-by-Step Setup Instructions
 1. Clone the Repository
 First, clone the repository to your local machine and navigate into the project directory:
