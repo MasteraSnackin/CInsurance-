@@ -1,0 +1,66 @@
+Prerequisites
+Node.js and npm: Ensure you have Node.js and npm installed. Check if they're installed by running:
+
+bash
+Copy code
+node -v
+npm -v
+Truffle: Install Truffle, a development framework for Ethereum:
+
+bash
+Copy code
+npm install -g truffle
+Ganache: Install Ganache, a personal Ethereum blockchain for testing. You can use either the GUI version or install the CLI version with:
+
+bash
+Copy code
+npm install -g ganache-cli
+Steps to Set Up and Run the Project
+Navigate to Project Directory:
+
+Open a terminal and go to the project directory:
+bash
+Copy code
+cd /path/to/PIS
+Install Dependencies:
+
+Run the following to install the required packages listed in package.json:
+bash
+Copy code
+npm install
+Start Ganache:
+
+If you're using the CLI version, start Ganache on a local network (port 8545 by default) in a separate terminal:
+bash
+Copy code
+ganache-cli
+Compile the Smart Contracts:
+
+Use Truffle to compile the contracts in Contracts/:
+bash
+Copy code
+truffle compile
+Deploy the Contracts:
+
+Deploy the contracts to the local Ganache network:
+bash
+Copy code
+truffle migrate --network development
+Run Tests (Optional):
+
+Test the contracts to make sure they're working as expected:
+bash
+Copy code
+truffle test
+Start the Frontend Application:
+
+After deploying the contracts, start the frontend. You may need to configure App.js to connect to the local Ganache network.
+Then, run:
+bash
+Copy code
+npm start
+This should start the frontend on http://localhost:3000.
+Configurations
+truffle-config.js: Ensure the network settings match your Ganache setup.
+Frontend Connection to Blockchain: In App.js, check if it connects to http://localhost:8545 or use web3.js to interact with the smart contracts.
+This setup should allow you to interact with the application locally. Let me know if you encounter any issues!
